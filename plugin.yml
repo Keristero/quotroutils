@@ -1,0 +1,11 @@
+main: quotroutils.plugin.Main
+name: quotroutils
+version: 2.3
+author: Keristero
+description: Some tweaks for the quotro server
+commands:
+  onehundredpercentnastybadbad:
+    description: dont use it ever
+    usage: /onehundredpercentnastybadbad
+    permission: quotroutils.onehundredpercentnastybadbad
+    permission-message: You don't actually have the courage to use this command.
