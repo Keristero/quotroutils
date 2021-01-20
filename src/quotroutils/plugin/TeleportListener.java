@@ -44,7 +44,6 @@ public class TeleportListener implements Listener {
             "YE",
             "YOUSE",
             "THEE",
-            "YOU LOSERS",
             "HACKERS SUCH AS YOUR SELF",
             "THEM PEEPS",
             "DOGS",
@@ -86,7 +85,6 @@ public class TeleportListener implements Listener {
             "FACING THROUGH",
             "INTO",
             "->",
-            "INSIDE",
             "CONTRA",
             "UP TILL",
             "IN TWAIN"
@@ -95,7 +93,6 @@ public class TeleportListener implements Listener {
             "OR",
             "ORR",
             "ORE",
-            "ON THE OTHER HAND",
             "CONVERSELY",
             "AND RESPECTIVELY",
             "IN TURN",
@@ -112,7 +109,6 @@ public class TeleportListener implements Listener {
             "OFF",
             "BEGINNING AT",
             "AS FAR BACK AS",
-            "POR",
             "<-"
         };
         w_the = new String[] {
@@ -122,7 +118,6 @@ public class TeleportListener implements Listener {
             "THY",
             "THA",
             "THEET",
-            "AN",
             "THAT"
         };
         w_outlands = new String[] {
@@ -133,7 +128,7 @@ public class TeleportListener implements Listener {
             "ANTI-IN LANDS",
             "OUTSIDE",
             "SPOOKVILLE",
-            "adventure_world",
+            "FAR OUT",
             "Place that is outside of the border",
             "MARMIVILLE",
             "Toto - Africa (Official Music Video)",
