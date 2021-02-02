@@ -3,9 +3,11 @@ package quotroutils.plugin;
 import java.util.Arrays;
 import java.util.List;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -14,6 +16,9 @@ public class Main extends JavaPlugin {
 	
 	@Override
     public void onEnable() {
+		// start up
+		// reloads
+		// plug in reloads
 		config.addDefault("ManageWeather", true);
 		config.addDefault("DecimalChanceOfRain", 0.1);
 		config.addDefault("BlockMonstersInZone", true);
@@ -49,20 +54,25 @@ public class Main extends JavaPlugin {
    
     @Override
     public void onDisable() {
+		// shutdown
+		// reloads
+		// plug in reloads
        
     }
     @Override
-    public boolean onCommand(CommandSender sender,
-            Command command,
-            String label,
-            String[] args) {
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("onehundredpercentnastybadbad")) {
-            sender.sendMessage("You have courage!");
+			if (sender instanceof Player) {
+				sender.sendMessage(ChatColor.GREEN + "You have courage!");
+			} else {
+				sender.sendMessage("Hello server!");
+			}
+            
             return true;
         }
         return false;
     }
     public void Log(String message) {
-    	System.out.println("[quotroutils] "+message);
+    	System.out.println("[quotroutils] " + message);
     }
 }
